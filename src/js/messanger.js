@@ -1,7 +1,7 @@
 import API from './Api.js';
 
 // const api = new API('http://localhost:7070/users');
-const api = new API('https://heroku-ahj-hw-8-2.herokuapp.com/');
+const api = new API('https://heroku-ahj-hw-8-2.herokuapp.com/users');
 
 
 function convertDate(value) {
@@ -25,7 +25,7 @@ export default class Messanger {
   constructor(name) {
     this.nameUser = name;
     // this.url = 'ws://localhost:7070/ws';
-    this.url = 'ws://heroku-ahj-hw-8-2.herokuapp.com/ws';
+    this.url = 'wss://heroku-ahj-hw-8-2.herokuapp.com/ws';
   }
 
   init() {

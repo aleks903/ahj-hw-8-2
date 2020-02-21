@@ -10,6 +10,11 @@
   text-align: center;
 }
 
+#alert {
+  position: absolute;
+  top: 20px;
+  background-color: #ffffff;
+}
 input {
   width: 100%;
 }
@@ -19,6 +24,7 @@ input {
   padding: 10px 30px;
   border-radius: 15px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .messanger {

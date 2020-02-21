@@ -37,6 +37,7 @@ export default class Messanger {
     this.drawUsersList();
 
     window.addEventListener('beforeunload', () => {
+      this.ws.close(1000, 'work end');
       api.remove(this.nameUser);
       this.drawUsersList();
     });
